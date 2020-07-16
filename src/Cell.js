@@ -24,6 +24,11 @@ export default class Cell {
     div.style.width = `${this.width}px`;
     div.style.height = `${this.height}px`;
     div.style.border = `1px solid black`;
+    div.style.borderRadius='3px';
+
+    div.style.transitionDuration='0.6s';
+ 
+
 
     div.onclick = e => {
     

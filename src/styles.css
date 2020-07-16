@@ -15,3 +15,14 @@ body {
 
 
 }
+.wrap{
+  border-radius: 3px;
+
+  transition-property: opacity;
+  transition-duration: 1s;
+
+
+
+
+  
+}

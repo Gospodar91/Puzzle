@@ -22,6 +22,8 @@ export default class PicturePuzzle {
     const div = document.createElement('div');
     div.style.position = 'relative';
     div.style.margin = '0 auto';
+ 
+  
 
     return div;
   }
@@ -33,9 +35,9 @@ export default class PicturePuzzle {
     for (let i = 0; i < this.dimension * this.dimension; i++) {
       this.cells.push(new Cell(this, i));
     }
-    // setTimeout(this.shuffle,1000)
-    this.shuffle();
-    setTimeout(console.log('testSetTimeout', ),5000)
+    setTimeout(this.shuffle.bind(this),1000)
+
+    
   }
   
   shuffle() {
