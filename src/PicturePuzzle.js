@@ -2,7 +2,7 @@ import Cell from './Cell';
 export default class PicturePuzzle {
   constructor(el, imgSrc, width) {
     this.parentEl = el;
-    this.dimension = 3;
+    this.dimension = 5;
     this.imgSrc = imgSrc;
     this.width = width;
     this.cells = [];
@@ -35,7 +35,7 @@ export default class PicturePuzzle {
     }
     // setTimeout(this.shuffle,1000)
     this.shuffle();
-    setTimeout(console.log('hi', ),5000)
+    setTimeout(console.log('testSetTimeout', ),5000)
   }
   
   shuffle() {
